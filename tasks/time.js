@@ -1,4 +1,4 @@
-const util = require('../util/system')
+const util = require('../util/copyString')
 const c = require('chalk')
 
 const task = async (time, time2) => {

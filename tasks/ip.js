@@ -1,5 +1,5 @@
 const address = require('address')
-const util = require('../util/system')
+const util = require('../util/copyString')
 const c = require('chalk')
 
 const ip = async () => {

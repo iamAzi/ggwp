@@ -1,5 +1,5 @@
 const path = require('path');
-const Jimp = require('jimp')
+const Jimp = require('jimp');
 
 /**
  * 图片压缩函数

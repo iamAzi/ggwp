@@ -3,8 +3,12 @@
 const commander = require('commander')
 const c = require('chalk')
 const execa = require('execa')
-
 const task = require('./tasks/index.js');
+const fs = require('fs');
+const path = require('path')
+var QRCode = require('qrcode')
+
+
 
 commander.version('1.0.1', '-v, --version', 'output the current version');
 
@@ -32,15 +36,21 @@ commander
     })
 
 commander
-    .command('img <path>')
+    .command('img <url>')
     .usage("--quality 50 --size 100x100 ")
     .option('-q, --quality <quality>')
     .option('-s, --size <size>')
-    .action((path, options) => {
-        task.img(path, {
+    .action((url, options) => {
+        task.img(url, {
             quality: options.quality || '',
             size: options.size || ''
         })
+    })
+
+commander
+    .command('qr <url>')
+    .action((url) => {
+        task.qrcodeCopy(url);
     })
 
 commander

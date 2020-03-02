@@ -1,6 +1,6 @@
 const clip = require('clipboardy')
 const chalk = require('chalk')
-const gmUtil = require('./grammer')
+const gmUtil = require('./jsType')
 
 const clipAsync = async (_target) => {
     let _t = _target;

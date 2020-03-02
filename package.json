@@ -12,12 +12,15 @@
   "author": "azi",
   "license": "ISC",
   "dependencies": {
+    "@jimp/core": "^0.9.3",
     "address": "^1.1.2",
     "chalk": "^3.0.0",
     "clipboardy": "^2.2.0",
     "commander": "^4.1.1",
     "execa": "^4.0.0",
+    "img-clipboard": "^1.0.4",
     "inquirer": "^7.0.4",
-    "jimp": "^0.9.3"
+    "jimp": "^0.9.3",
+    "qrcode": "^1.4.4"
   }
 }
