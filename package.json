@@ -1,0 +1,22 @@
+{
+  "name": "ggwp",
+  "version": "1.0.0",
+  "description": "日常开发中的效率工具合集",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "bin": {
+    "gg": "./index.js"
+  },
+  "author": "azi",
+  "license": "ISC",
+  "dependencies": {
+    "address": "^1.1.2",
+    "chalk": "^3.0.0",
+    "clipboardy": "^2.2.0",
+    "commander": "^4.1.1",
+    "execa": "^4.0.0",
+    "inquirer": "^7.0.4"
+  }
+}
