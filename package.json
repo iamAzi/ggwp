@@ -1,6 +1,6 @@
 {
   "name": "ggwp",
-  "version": "1.0.0",
+  "version": "1.0.1",
   "description": "日常开发中的效率工具合集",
   "main": "index.js",
   "scripts": {
@@ -17,6 +17,7 @@
     "clipboardy": "^2.2.0",
     "commander": "^4.1.1",
     "execa": "^4.0.0",
-    "inquirer": "^7.0.4"
+    "inquirer": "^7.0.4",
+    "jimp": "^0.9.3"
   }
 }

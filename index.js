@@ -1,12 +1,12 @@
 #!/usr/bin/env node
 
 const commander = require('commander')
-const inquirer = require('inquirer')
 const c = require('chalk')
 const execa = require('execa')
-const util = require('./util/system')
 
 const task = require('./tasks/index.js');
+
+commander.version('1.0.1', '-v, --version', 'output the current version');
 
 commander
     .command('time [t1] [t2]')
@@ -29,6 +29,18 @@ commander
     .action(() => {
         const rules = require('./docs/regex')
         console.log(rules);
+    })
+
+commander
+    .command('img <path>')
+    .usage("--quality 50 --size 100x100 ")
+    .option('-q, --quality <quality>')
+    .option('-s, --size <size>')
+    .action((path, options) => {
+        task.img(path, {
+            quality: options.quality || '',
+            size: options.size || ''
+        })
     })
 
 commander
