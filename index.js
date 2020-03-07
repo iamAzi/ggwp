@@ -10,7 +10,7 @@ var QRCode = require('qrcode')
 
 
 
-commander.version('1.0.1', '-v, --version', 'output the current version');
+commander.version('1.0.2', '-v, --version', 'output the current version');
 
 commander
     .command('time [t1] [t2]')
