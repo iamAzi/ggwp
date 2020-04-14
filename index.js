@@ -54,6 +54,13 @@ commander
     })
 
 commander
+    .command('gitcommit')
+    .action(() => {
+        const string = require('./docs/git-style-commit')
+        console.log(string);
+    })
+
+commander
     .command('dev')
     .description('在本地进入开发目录')
     .action(async () => {
