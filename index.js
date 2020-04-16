@@ -10,7 +10,7 @@ var QRCode = require('qrcode')
 
 
 
-commander.version('1.0.2', '-v, --version', 'output the current version');
+commander.version('1.0.4', '-v, --version', 'output the current version');
 
 commander
     .command('time [t1] [t2]')
@@ -67,7 +67,7 @@ commander
         try {
             const cmd = `code /Users/wangze/Desktop/MyProjects/effi-tools`
             console.log(cmd);
-            execa.node(cmd);
+            execa.command(cmd);
         } catch (e) {
             console.log(e);
         }
