@@ -1,6 +1,6 @@
 {
   "name": "ggwp",
-  "version": "1.0.4",
+  "version": "1.0.5",
   "description": "日常开发中的效率工具合集",
   "main": "index.js",
   "scripts": {
