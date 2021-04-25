@@ -10,12 +10,6 @@ test : 增加测试
 build : 改变了build工具 如 grunt换成了 npm
 revert : 撤销上一次的 commit
 chore : 构建过程或辅助工具的变动
-
-<type>(<scope>): <subject>
-// 空一行
-<body>
-// 空一行
-<footer>
 `
 
 module.exports = gitStyleCommit;

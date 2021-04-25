@@ -54,7 +54,7 @@ commander
     })
 
 commander
-    .command('gitcommit')
+    .command('gm')
     .action(() => {
         const string = require('./docs/git-style-commit')
         console.log(string);
@@ -65,7 +65,7 @@ commander
     .description('在本地进入开发目录')
     .action(async () => {
         try {
-            const cmd = `code /Users/wangze/Desktop/MyProjects/effi-tools`
+            const cmd = `code ~/Desktop/MyProjects/ggwp`
             console.log(cmd);
             execa.command(cmd);
         } catch (e) {
